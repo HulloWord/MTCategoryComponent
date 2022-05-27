@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTCategoryComponent'
-  s.version          = '1.3.0'
+  s.version          = '1.3.1'
   s.summary          = '常用的Category封装自己习惯快速上手的方法.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lyleLH/MTCategoryComponent'
+  s.homepage         = 'https://github.com/STTechnology5652/MTCategoryComponent.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Major Tom' => 'v2top1lyle@gmail.com' }
-  s.source           = { :git => 'https://github.com/lyleLH/MTCategoryComponent.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/STTechnology5652/MTCategoryComponent.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -50,6 +50,9 @@ TODO: Add long description of the pod here.
       end
      ss.subspec 'UIControl' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIControl/*.{h,m}'
+      end
+     ss.subspec 'UIFont' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIFont/*.{h,m}'
       end
      ss.subspec 'UIImageView' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIImageView/*.{h,m}'
